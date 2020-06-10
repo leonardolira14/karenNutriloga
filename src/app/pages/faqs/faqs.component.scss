@@ -1,0 +1,49 @@
+
+@import '../../../styles.scss';
+.card-fqs{
+   
+    background-color: map-get($colorsN,morado );
+    border-radius: 91px;
+    padding: 30px 80px;
+    @media (max-width:780px){
+        padding: 5px 10px;
+        border-radius: 0px;
+    }
+    &.pl-b{
+    top: 50px; 
+    }
+    & h3{
+        color:white;
+        font-family: map-get($fonts, regular );
+         font-size: 35px;
+    }
+    & .card-fqs-min{
+        & .col-1{
+            @media (max-width:780px){
+               display: none;
+            }
+        }
+        & .text{
+            font-size: 20px;
+            font-family: map-get($fonts, regular);
+            color:map-get($colorsN,gris4);
+            line-height: 2.5;
+            @media (max-width:780px){
+                font-size: 12px;
+            }
+        }
+        & .text-r{
+            padding: 20px;
+            font-size: 15px;
+            font-family: map-get($fonts, regular);
+            color:map-get($colorsN,gris4);
+            @media (max-width:780px){
+               padding: 5px;
+            }
+        }
+    }
+}
+
+.fondo6{
+    margin-top: 40px;
+}

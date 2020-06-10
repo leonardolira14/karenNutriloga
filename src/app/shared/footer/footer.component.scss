@@ -1,0 +1,27 @@
+
+@import '../../../styles.scss';
+
+
+.titulo, .sub-titulo, .titulo-2, .sub-titulo-2{
+    font-family: map-get($fonts, medium );
+    font-style: italic;
+    color: map-get($colorsN, blanco );
+}
+.titulo{
+    font-size: 35px;
+}
+.sub-titulo{
+    font-size: 25px;
+}
+
+.titulo-2{
+    font-size: 25px;
+}
+.sub-titulo-2{
+    font-size: 14px;
+    margin-top: 10px;
+    & a{
+        text-decoration: none;
+        color: map-get($colorsN, blanco );
+    }
+}

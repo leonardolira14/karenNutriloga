@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "w-b";
+  src: url("/assets/fonts/WorkSans-Black.otf");
+}
+@font-face {
+  font-family: "w-bold";
+  src: url("/assets/fonts/WorkSans-Bold.otf");
+}
+@font-face {
+  font-family: "w-e-b";
+  src: url("/assets/fonts/WorkSans-ExtraBold.otf");
+}
+@font-face {
+  font-family: "w-e-l";
+  src: url("/assets/fonts/WorkSans-ExtraLight.otf");
+}
+@font-face {
+  font-family: "w-l";
+  src: url("/assets/fonts/WorkSans-Light.otf");
+}
+@font-face {
+  font-family: "w-m";
+  src: url("/assets/fonts/WorkSans-Medium.otf");
+}
+@font-face {
+  font-family: "w-r";
+  src: url("/assets/fonts/WorkSans-Regular.otf");
+}
+@font-face {
+  font-family: "w-s-b";
+  src: url("/assets/fonts/WorkSans-SemiBold.otf");
+}
+
+$fonts:(
+		  base:'Work Sans',
+		  regular:'w-r',
+		  semiBold:'w-s-b',
+		  medium:'w-m',
+		  extraLight:'w-e-l',
+		  light:'w-l',
+		  extrabold:'w-e-b',
+		  bold:'w-bold',
+		  black:'w-b'
+    );
+$colorsN:(
+    morado:#B88BB2,
+    azul:#84DDDC,
+    gris1:#C4C1C1,
+    gris3:#EEEEEE,
+    gris4:#696062,
+    gris5:#C0C1C1,
+    blanco:#fff,
+    naranja:#ff9234
+);
+
+@each $profile, $bgcolor in $colorsN {
+	.text-#{$profile}{
+		color: $bgcolor !important;
+	}
+	.bg-#{$profile}{
+		background:$bgcolor  !important;
+		border-color:$bgcolor !important;
+		color:map-get( $colorsN, blanco);
+		
+  }
+  .btn-#{$profile}{
+		background:$bgcolor  !important;
+		border-color:$bgcolor !important;
+		color:map-get( $colorsN, blanco) !important;
+		font-family: map-get($fonts, medium ) !important;
+		font-size: 20px !important;
+		border-radius: 30px !important;
+		padding:5px 50px !important;
+  }
+  .btn-outline-#{$profile}{
+	  color:$bgcolor;
+	  background: transparent !important;
+	  border-color: $bgcolor !important;
+	  border-radius: 0px !important;
+	  transition: all 0.5s;
+	  font-family: map-get($fonts, medium );
+	  font-size: 25px;
+	  &:hover{
+	  	 color:map-get($colorsN,blanco);
+	  	transition: all 0.5s;
+		  background:rgba($bgcolor,1)!important ;
+	  	border-color: $bgcolor !important;
+	  }
+	}
+}
+
+$spaceamounts: (1,2,3,4,5, 10, 15, 20, 25, 30, 35, 40, 45, 50,55,60,65,70, 75,80,85,90,95,100,110,120,130,140);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  .p-#{$space} {
+    padding: #{$space}px !important;
+   }
+   .wpx-#{$space} {
+    width: #{$space}px !important;
+   }
+   .hpx-#{$space} {
+    height: #{$space}px !important;
+   }
+	@each $side in $sides {
+		.m-#{str-slice($side, 0, 1)}-#{$space} {
+			margin-#{$side}: #{$space}px !important;
+		}
+		.p-#{str-slice($side, 0, 1)}-#{$space} {
+			padding-#{$side}: #{$space}px !important;
+		}
+	}
+}
+
+.class-imgrond{
+	border-radius: 100%;
+	object-fit: cover;
+	width: 250px;
+	height: 250px;
+}
+.preload-modal{
+  position: fixed;
+  top: 0;
+  z-index: 1031;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .btn-close-modal{
+	  right: 0px;
+    position: absolute;
+    top: 0;
+  }
+}
+.titulo{
+        position: relative;
+        display: block;
+        font-size: 50px;
+        font-style: italic;
+        font-size: map-get($fonts, light ); 
+        color:map-get($colorsN,gris4);
+        &::before{
+            content:'';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 3px;
+            background-color: map-get($colorsN, azul );
+        }
+    }
+.fondo6{
+    margin-top: 250px;
+    position: relative;
+    top:0;
+    left: 0;
+    background: transparent url('/assets/img/f5.svg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 300px;
+     & .f2{
+        position: absolute;
+        top:0px;
+        left: 0;
+        width: 100%;
+        height: 107px;
+     }
+     & .f4{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 100%;
+        height: 107px;
+        transform: rotate(180deg);
+     }
+     & .titulo{
+        position: relative;
+        display: block;
+        font-size: 50px;
+        font-style: italic;
+        font-size: map-get($fonts, light ); 
+        color:map-get($colorsN,gris4);
+        &::before{
+            content:'';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 3px;
+            background-color: map-get($colorsN, blanco );
+        }
+    }
+    & .sub-titulo{
+      margin-top: 30px;
+      padding: 20px 50px;
+      & h2 {
+             font-family: map-get($fonts, light );
+        }
+    }
+    & .alert{
+      margin-top: 30px;
+      padding: 20px 50px;
+      & h2 {
+        color:map-get($colorsN, gris4 );
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+             font-family: map-get($fonts, bold );
+        }
+    }
+    .text-list{
+      color:map-get($colorsN, gris4 );
+       font-size: 15px;
+      font-style: italic;
+       font-family: map-get($fonts, semiBold );
+    }
+    .card-store{
+        background-color: white;
+        border-radius: 20px;
+        border-color: none;
+        margin: 40px auto;
+        padding: 20px 0;
+    display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        & .logo{
+            width: 160px;
+            height: 160px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: map-get($colorsN, morado );
+            & i{
+                color:white;
+                font-size: 100px;
+            }
+        }
+        
+        & .textto{
+            margin-top: 30px;;
+            color: map-get($colorsN, morado );
+            font-size:30px;
+            font-style: italic;
+            font-family: map-get($fonts, medium );
+        }
+    }   
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

@@ -1,0 +1,66 @@
+
+@import '../../../styles.scss';
+.card-contacto{
+    position: relative;
+    top:-150px;
+    padding: 20px;
+    box-shadow: -10px  -5px rgba(0,0,0,0.20);
+      & .titulo,  & .texto, & .label{
+        color:map-get($colorsN, gris4 );
+        font-style: italic;
+        font-family: map-get($fonts, regular);;
+    }
+
+    & .titulo{
+        font-size: 45px;
+    }
+    & .texto{   
+        font-size: 20px;
+    }
+    & .label{
+font-size: 20px;    
+    }
+}
+
+.ul-contacto{
+    position: relative;
+    
+    list-style: none;
+    @media (max-width:780px) {
+         top:-10px;
+    }
+    & li{
+        line-height: 3;
+         @media (max-width:780px) {
+            line-height: 3;
+        }
+        & .fa{
+            font-size: 25px;
+            margin-right: 25px;
+            color:white;
+        }
+        & a,& span{
+            font-size: 25px;
+            color:white;
+            font-family: map-get($fonts, regular);
+             @media (max-width:780px) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+.text-contatcto{
+    top:150px;
+    @media (max-width:780px) {
+               top: -100px;
+    position: relative;
+    }
+    & .contactoanos{
+        font-family: map-get($fonts, regular );
+        font-style: italic;
+        
+    }
+
+}

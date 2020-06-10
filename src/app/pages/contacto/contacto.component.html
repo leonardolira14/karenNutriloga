@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 titulo text-center m-t-30">
+            Contacto
+        </div>
+    </div>
+</div>
+<div class="fondo6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-6 col-lg-6">
+                <div class="card w-100 card-contacto">
+                    <span class="titulo d-block text-center">Contactanos</span>
+                    <span class='texto m-t-40 m-b-40'>Envíanos un mensaje con tus dudas y en breve nos pondremos en contacto contigo.</span>
+                    <form [formGroup]='form_mensaje' (ngSubmit)='enviar_mensaje()'>
+                        <div class="form-group">
+                            <label class="label" >Nombre(S)</label>
+                            <input formControlName='Nombre' [ngClass]="{'is-invalid': submmit && get_data_form.Nombre.errors}" type="email" class="form-control "  aria-describedby="emailHelp">
+                            <small *ngIf="submmit && get_data_form.Nombre.errors"  class="form-text text-muted">Este campo es necesario.</small>
+                        </div>
+                        <div class="form-group">
+                            <label class="label" >Celular/Telefono</label>
+                            <input formControlName='Tel' [ngClass]="{'is-invalid': submmit && get_data_form.Tel.errors}" type="email" class="form-control" aria-describedby="emailHelp">
+                            <small *ngIf="submmit && get_data_form.Tel.errors" class="form-text text-muted">Este campo es necesario.</small>
+                        </div>
+                        <div class="form-group">
+                            <label  class="label" >Correo Eletrónico</label>
+                            <input formControlName='Correo' type="email" class="form-control"  aria-describedby="emailHelp">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="label" >Mensaje</label>
+                            <textarea formControlName='Mensaje' [ngClass]="{'is-invalid': submmit && get_data_form.Mensaje.errors}" class="form-control"  aria-describedby=""></textarea>
+                            <small *ngIf="submmit && get_data_form.Mensaje.errors" class="form-text text-muted">Este campo es necesario.</small>
+                        </div>
+                        <button type="submit" class="btn btn-morado float-right m-t-30">{{text_button}}</button>
+                    </form>
+                
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-6 col-lg-6 text-contatcto"  >
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-white text-regular contactoanos">Contactanos ó agenda tu cita presencial</h2>
+                    </div>
+                </div>
+                <ul class="ul-contacto">
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:info@nutriologakaren.com">info@nutriologakaren.com</a>
+                    </li>
+                  
+                    <li>
+                        <i class="fa fa-facebook-square"></i>
+                        <a href="https://www.facebook.com/nutrikarenglz/">Nutrióloga Karen González Riestra</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-whatsapp"></i>
+                        <a href="https://api.whatsapp.com/send?phone=52333397-3900">33 3397 3900</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

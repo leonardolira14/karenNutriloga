@@ -1,0 +1,67 @@
+@import '../../../styles.scss';
+
+.card-specification{
+    padding: 30px 15px;
+    background-image: url('/assets/img/fondocuadro.svg');
+    &.p-l{
+        top: 50px;
+    }
+}
+.text-list{
+    & div{
+        margin-top: 20px;
+        &.col-1{
+            text-align: right;
+        }
+    }
+}
+.card-consulta{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 200px;
+    position: relative;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & .divfondo{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    & .oferta{
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        font-style: italic;
+        font-family: map-get($fonts, medium );
+        background: map-get($colorsN, naranja );
+        font-size: 15px;
+        padding: 5px 10px;
+        color:#fff;
+    }
+}
+.card-textt{
+         font-style: italic;
+         font-family: map-get($fonts, medium );
+         font-size: 15px;
+         & .span{
+                 text-decoration: line-through;
+         }
+    }
+.fondo6{
+    margin-top: 40px !important;
+}
+
+.btnpay{
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.ulitma-card{
+    position: relative;
+    top: 50px;
+}

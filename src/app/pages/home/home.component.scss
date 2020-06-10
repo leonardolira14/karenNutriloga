@@ -1,0 +1,293 @@
+@import '../../../styles.scss';
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    position: relative;
+    width: 25px !important;
+    height: 30px !important;
+    background-size: cover;
+}
+.carousel-control-prev {
+   
+    left: 0px;
+}
+.carousel-control-next{
+    right: 0px;    
+}
+.fondo-1{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: map-get($colorsN, azul );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    & .btn{
+        font-family: "w-m" !important;
+        font-style: normal;
+    }
+    & .f1{
+        position: absolute;
+        top:75%;
+        left:0;
+        width: 100%;
+        height: 275px;
+         z-index: 1;
+    }
+    & .f2{
+        position: absolute;
+        top:30%;
+        left:0;
+        width: 100%;
+        z-index: 1;
+        opacity: 0.25;
+    }
+    & .card-SLD{
+        background-color:transparent;
+        border-color: transparent;
+        & .titulo{
+        font-size: 35px;
+        font-style: italic;
+        font-size: map-get($fonts, bold );
+        color:#fff;
+        margin-bottom: 20px;
+        color: map-get($colorsN, gris4 );
+        }
+        & .subtitulo{
+            font-size: 20px;
+            font-style: italic;
+            font-size: map-get($fonts, bold );
+            color:#fff;
+            color: map-get($colorsN, gris4 );
+        }
+    }
+
+}
+.img-test{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+.card-testimonio{
+    background-color: map-get($colorsN, morado );
+    width: 100%;
+    padding:2rem 1.5rem;
+    color:#fff;
+    border-radius: 0;
+    & .titulo{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-style: italic;
+        font-size: map-get($fonts, medium );
+        color:#fff;
+        margin-bottom: 20px;
+    }
+    & .subtitulo{
+        font-size: 14px;
+        font-style: italic;
+        font-size: map-get($fonts, medium );
+        color:#fff;
+    }
+}
+
+.f2-left, .f2-rigth{
+    position: absolute;
+    top:20px;
+    width: 108px;
+    height: 90px;
+    opacity: 0.28;
+}
+.f2-left{
+    left:30px;
+}
+.f2-rigth{
+    right: 30px;
+}
+
+.titulo{
+    position: relative;
+    display: block;
+    font-size: 50px;
+    font-style: italic;
+    font-size: map-get($fonts, light ); 
+    color:map-get($colorsN,gris5);
+    &::before{
+        content:'';
+        position: absolute;
+        top: 100%;
+        left: 85px;
+        width: 160px;
+        height: 3px;
+        background-color: map-get($colorsN, azul );
+    }
+}
+.subtitulo{
+    position: relative;
+    display: block;
+    font-size: 25px;
+    font-style: italic;
+    font-size: map-get($fonts, light ); 
+    color:map-get($colorsN,morado);
+    
+}
+.cardtexto{
+    position: relative;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    font-size: map-get($fonts, light ); 
+    color:map-get($colorsN,morado);
+    
+}
+
+.fondo5{
+    margin-top: 150px;
+    position: relative;
+    top:0;
+    left: 0;
+    background-color: map-get($colorsN, azul );
+     width: 100%;
+     & .f2{
+        position: absolute;
+        top:-100px;
+        left: 0;
+        width: 100%;
+        height: 107px;
+     }
+     & .f4{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 100%;
+        height: 107px;
+        transform: rotate(180deg);
+     }
+     .titulo{
+        position: relative;
+        display: block;
+        font-size: 50px;
+        font-style: italic;
+        font-size: map-get($fonts, light ); 
+        color:map-get($colorsN,gris4);
+        &::before{
+            content:'';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 3px;
+            background-color: map-get($colorsN, blanco );
+        }
+    }
+    .card-store{
+        background-color: white;
+        border-radius: 20px;
+        border-color: none;
+        margin: 40px auto;
+        padding: 20px 0;
+    display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        & .logo{
+            width: 160px;
+            height: 160px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: map-get($colorsN, morado );
+            & i{
+                color:white;
+                font-size: 100px;
+            }
+        }
+        & .textto{
+            margin-top: 30px;;
+            color: map-get($colorsN, morado );
+            font-size:30px;
+            font-style: italic;
+            font-family: map-get($fonts, medium );
+        }
+    }   
+}
+
+.secc-testimonios{
+    & .titulo{
+        position: relative;
+        display: block;
+        font-size: 50px;
+        font-style: italic;
+        font-size: map-get($fonts, light ); 
+        color:map-get($colorsN,gris5);
+        &::before{
+            content:'';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 3px;
+            background-color: map-get($colorsN, azul );
+        }
+    }
+}
+
+.parallax{
+    
+  background-image: url("/assets/img/IMG_8810.jpeg");
+
+  
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    @media (max-width:780px) {
+        height: 200px;
+    background-size: contain;
+  }
+}
+
+.contenedor-galeria{
+    & img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    & .small, & .normal, & .largo{
+        padding:5px;
+    }
+    @media (min-width:480px) {
+         &{
+             max-width: 960px;
+             margin: auto;
+             & .columna-1-3{
+                 width: 33.33%;
+             }
+              & .columna-2-3{
+                 width: 66.67%;
+             }
+             & .fila{  
+                display: flex;
+             }
+             & .small{
+                height: 160px;
+            }
+            & .normal{
+                height: 333px;
+            }
+            & .largo{
+                height: 666px;
+            }
+         }
+
+    }
+}

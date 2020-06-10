@@ -1,0 +1,239 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 titulo text-center m-t-30">
+            Preguntas Frecuentes
+        </div>
+    </div>
+</div>
+<div class="fondo6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 card-fqs">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3 class="text-wite">Consultas</h3>
+                    </div>
+                    <div class="col-12 m-t-30">
+                       <div class="card w-100 bg-gris3 card-fqs-min">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-11 text" (click)='p1= !p1'>
+                                        ¿Las dietas son personalizadas?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p1" class="fa fa-plus-circle"></i>
+                                        <i  *ngIf="!p1" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r"  [ngbCollapse]='p1'>
+                                        Sí, los menús se diseñan de acuerdo a tus necesidades, estilo de vida, gustos, o padecimiento.
+                                    </div>
+                                    <div class="col-11 text" (click)='p2= !p2'>
+                                        ¿Las consultas en línea funcionan igual que las presenciales?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                    <i *ngIf="p2" class="fa fa-plus-circle"></i>
+                                    <i *ngIf="!p2" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p2'>
+                                        Sí, durante la consulta en línea la Nutrióloga platicará contigo para acordar objetivos y poder diseñar un menú
+                                        totalmente personalizado.
+                                    </div>
+                                    <div class="col-11 text" (click)='p3= !p3'>
+                                        ¿Si tengo alguna enfermedad puedo consultar?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p3" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p3" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p3'>
+                                        Antes de consultar es ideal ponerte en contacto con la Nutrióloga para hablar sobre tu enfermedad y decidir si puede
+                                        llevar tu plan nutricional
+                                    </div>
+                                    <div class="col-11 text" (click)='p4= !p4'>
+                                        ¿Utilizas pastillas para bajar de peso o mesoterapia?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p4" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p4" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p4'>
+                                        No, se trabaja únicamente con planes de alimentación y de ser necesario (después de una valoración) puede ser
+                                        recomendado un suplemento natural.
+                                    </div>
+                                    <div class="col-11 text" (click)='p5= !p5'>
+                                    ¿Cuánto dura la consulta?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p5" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p5" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p5'>
+                                    La consulta de primera vez hasta 60 minutos, de seguimiento 30 minutos
+                                    </div>
+                                    <div class="col-11 text" (click)='p6= !p6'>
+                                        ¿Las consultas son solamente para bajar de peso?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                    <i *ngIf="p6" class="fa fa-plus-circle"></i>
+                                    <i *ngIf="!p6" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p6'>
+                                        No, es ideal para personas que quieran aumentar masa muscular, bajar % de grasa, enfermedades como diabetes,
+                                        hipertensión, dislipidemias, síndrome de ovario poliquístico, hipotiroidismo, colitis, gastritis, reflujo.
+                                    </div>
+                                    <div class="col-11 text" (click)='p7= !p7'>
+                                        ¿Quién va atender mis dudas después de consulta?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p7" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p7" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p7'>
+                                        La Nutrióloga estará al pendiente de tus dudas vía whatsapp, llamada telefónica, correo electrónico, o por medio de las
+                                        redes sociales.
+                                    </div>
+                                    <div class="col-11 text" (click)='p8= !p8'>
+                                        ¿Manejas planes familiares?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p8" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p8" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p8'>
+                                        Sí, puedes contactar a la nutrióloga para asesorarte sobre los planes!
+                                    </div>
+                                    <div class="col-11 text" (click)='p9= !p9'>
+                                        ¿Cada cuánto son las consultas de seguimiento?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                    <i *ngIf="p9" class="fa fa-plus-circle"></i>
+                                    <i *ngIf="!p9" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p9'>
+                                        Se recomienda cada 15 días y en cada consulta se cambia el plan de alimentación
+                                    </div>
+                                    <div class="col-11 text" (click)='p10= !p10'>
+                                        ¿Puedo alternar consultas presenciales y en línea?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p10" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p10" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p10'>
+                                        Claro! Se pueden adaptar perfectamente, si no vives en Guadalajara y tienes alguna visita a la ciudad puedo atenderte!
+                                    </div>
+                                    <div class="col-11 text" (click)='p11 = !p11'>
+                                        ¿Qué estudios/medidas se hacen en la consulta presencial?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p11" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p11" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p11'>
+                                        Estudio de composición corporal mediante bioimpedancia, que nos brinda datos como % de grasa total y segmental, kg de
+                                        músculo, Peso, IMC, % de agua, grasa visceral, toma de circunferencia cintura, cadera, y en algunos casos pliegues
+                                        cutáneos.
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 card-fqs pl-b">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3 class="text-wite">Retos/Programas</h3>
+                    </div>
+                    <div class="col-12 m-t-30">
+                        <div class="card w-100 bg-gris3 card-fqs-min">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-11 text" (click)='p12= !p12'>
+                                        ¿Quién puede hacer el reto?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p12" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p12" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p12'>
+                                    Personas con sobrepeso, obesidad, y/o quieran bajar su % de grasa, tonificar mediante ejercicio, personas con gastritis,
+                                    colitis, inflamación, síndrome de ovario poliquistico, hipertensión, colesterol y/o triglicéridos elevados.
+                                    </div>
+                                    <div class="col-11 text" (click)='p13= !p13'>
+                                        ¿Los menús son iguales para todos?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p13" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p13" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p13'>
+                                    Son menús prediseñados enfocados en una alimentación natural y saludable, si algún alimento/platillo no te gusta, o eres
+                                    intolerante, puedes modificarlo de acuerdo a la lista de intercambio de alimentos y la nutrióloga con mucho gusto te
+                                    ayudará a realizar las modificaciones. Si requieres algo más personalizado te recomiendo la consulta presencial o en
+                                    línea.
+                                    </div>
+                                    <div class="col-11 text" (click)='p14= !p14'>
+                                        ¿Si tengo alguna enfermedad puedo consultar?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p14" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p14" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p14'>
+                                        Antes de consultar es ideal ponerte en contacto con la Nutrióloga para hablar sobre tu
+                                        enfermedad y decidir si puede
+                                        llevar tu plan nutricional
+                                    </div>
+                                    <div class="col-11 text" (click)='p15= !p15'>
+                                        ¿No radico en México puedo entrar?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p15" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p15" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p15'>
+                                        Sí, el reto es totalmente en línea, te puedes inscribir desde cualquier país.
+                                    </div>
+                                    <div class="col-11 text" (click)='p16= !p16'>
+                                        ¿Personas veganas/vegetarianas pueden hacer el reto?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p16" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p16" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p16'>
+                                    Por el momento no cuento con esa modalidad en reto, te recomiendo una consulta personalizada ya sea presencial o en
+                                    línea.
+                                    </div>
+                                    <div class="col-11 text" (click)='p17= !p17'>
+                                        ¿Y si algún alimento no me gusta?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p17" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p17" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p17'>
+                                        No te preocupes, se te entregará una lista de intercambio de alimentos para que el menú lo adaptes a tu gusto.
+                                    </div>
+                                    <div class="col-11 text" (click)='p18= !p18'>
+                                        ¿Son costosos los menús?
+                                    </div>
+                                    <div class="col-1 text-morado text text-right">
+                                        <i *ngIf="p18" class="fa fa-plus-circle"></i>
+                                        <i *ngIf="!p18" class="fa fa-minus-circle"></i>
+                                    </div>
+                                    <div class="col-12 collapse navbar-collapse text-r" [ngbCollapse]='p18'>
+                                    La Nutrióloga diseña los planes con el fin de enseñarte lo rico y variado que puede ser una alimentación sana, sin
+                                    embargo los menús se ajustan al presupuesto de cada persona, no te preocupes ningún producto es obligatorio comprarlo!
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

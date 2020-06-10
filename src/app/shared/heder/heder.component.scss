@@ -1,0 +1,70 @@
+@import '../../../styles.scss';
+
+.logo-class{
+    width: 150px;
+}
+
+.navbar-navv{
+    & .item{
+        
+        & a{
+            display: block;
+            text-align: center;
+            font-family: map-get($fonts, medium );
+            color:map-get($colorsN, gris5 );
+            text-decoration: none;
+            padding-top:25px ;
+            &:hover{
+             background-color: map-get($colorsN, morado );
+             color:#fff;
+        }
+        &.active{
+             background-color: map-get($colorsN, morado );
+             color:#fff;
+        }
+        }
+    }
+}
+
+.menu-cel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    & .fa{
+        font-size: 30px;
+    }
+}
+
+.menu{
+    position: fixed;
+    top: 40;
+    left: -100%;
+    background-color: white;
+    z-index: 1000;
+    width: 90%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+    &.active{
+        left: 0;
+        transition: all .5s ease-in-out;
+    }
+    & ul{
+        list-style: none;
+        padding: 0;
+        & li{
+            & a{
+                padding-left: 20px;
+                line-height: 3;
+                display: block;
+                font-family: map-get($fonts, medium );
+                color:map-get($colorsN, gris5 );
+                text-decoration: none;
+               
+            &:hover{
+             background-color: map-get($colorsN, morado );
+             color:#fff;
+        }
+    }
+}
+    }
+
+}

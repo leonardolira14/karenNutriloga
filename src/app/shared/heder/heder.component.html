@@ -1,0 +1,72 @@
+<div class="container-fluid d-none d-sm-none d-md-block d-lg-block d-xl-block ">
+    <div class="container">
+            <div class="row d-flex align-items-center  navbar-navv">
+                <div class="col-2">
+                    <a routerLink='/'>
+                    <img src="/assets/img/logonombre2-r.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col item">
+                    <a routerLink='/home' routerLinkActive="active">Home</a>
+                </div>
+                <div class="col item">
+                    <a routerLink='/karen' routerLinkActive="active">Karen</a>
+                </div>
+                <div class="col item">
+                    <a routerLink='/consultas-retos' routerLinkActive="active">Consultas / Retos</a>
+                </div>
+
+                <div class="col item">
+                    <a routerLink='/faqs' routerLinkActive="active">FAQ's</a>
+                </div>
+                <div class="col item">
+                    <a routerLink='/contacto' routerLinkActive="active">Contacto</a>
+                </div>
+                <div class="col-1">
+
+                </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="https://www.facebook.com/nutrikarenglz/" target="_blank">
+                            <i class="fa fa-facebook-official text-gris5" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://api.whatsapp.com/send?phone=52333397-3900" target="_blank">
+                            <i class="fa fa-whatsapp text-gris5" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://www.instagram.com/nutrikarenglz/" target="_blank">
+                            <i class="fa fa-instagram text-gris5" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="container-fluid d-block d-sm-block d-md-none d-lg-none d-xl-none ">
+    <div class="row d-flex align-items-center menu-cel">
+        <div class="col-6">
+            <a routerLink='/'>
+                <img src="/assets/img/logonombre2-r.png" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="col-6 text-right text-morado">
+             <div *ngIf='!menu_cel' (click)="menu_cel = true" class="fa fa-bars"></div> 
+            <div *ngIf='menu_cel' (click)="menu_cel = false;"class="fa fa-times"></div>
+        </div>
+    </div>
+</div>
+
+<div class="menu" [ngClass]="{'active':menu_cel}">
+    <ul>
+        <li><a (click)="menu_cel = false;" routerLink='/home' routerLinkActive="active">Home</a></li>
+        <li><a (click)="menu_cel = false;" routerLink='/karen' routerLinkActive="active">Karen</a></li>
+        <li><a (click)="menu_cel = false;" routerLink='/consultas-retos' routerLinkActive="active">Consultas/Retos</a></li>
+        <li><a (click)="menu_cel = false;" routerLink='/faqs' routerLinkActive="active">FAQ's</a></li>
+        <li><a (click)="menu_cel = false;" routerLink='/contacto' routerLinkActive="active">Contacto</a></li>
+    </ul>
+</div>
